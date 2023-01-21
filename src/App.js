@@ -1,7 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import SignIn from "./components/Login";
 import HomePage from "./pages/HomePage/indes";
 import Login from "./pages/Login";
 

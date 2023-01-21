@@ -26,18 +26,22 @@ const retrospectiveListInfo = [
 
 const HomePage = () => {
   const navigate = useNavigate();
+
+  React.useEffect(() => {
+    if (!localStorage.getItem("user")) navigate("/login");
+  }, []);
+
   return (
-    <div >
-     <div className="button-wrapper">
-       <Button
+    <div>
+      <div className="button-wrapper">
+        <Button
           onClick={() => {
             localStorage.removeItem("user");
             navigate("/login");
-          }}
-        >
+          }}>
           Logout
         </Button>
-     </div>
+      </div>
       <Typography className="retrospective-heading" variant="h3">
         Retrospective
       </Typography>

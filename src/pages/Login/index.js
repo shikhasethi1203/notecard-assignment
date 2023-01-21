@@ -57,8 +57,7 @@ export default function Login() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-        }}
-      >
+        }}>
         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
           {/* <LockOutlinedIcon /> */}
         </Avatar>
@@ -94,8 +93,7 @@ export default function Login() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 }}
-          >
+            sx={{ mt: 3, mb: 2 }}>
             Sign In
           </Button>
 
