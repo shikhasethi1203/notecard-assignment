@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 .header {
   border: 25px solid grey;
   border-radius: 20px;
-   font-size: large;
+  font-size: large;
   text-align: center;
   padding: 20px;
   color: black;

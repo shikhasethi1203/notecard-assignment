@@ -1,0 +1,11 @@
+.retrospective-wrapper {
+  padding: 1rem;
+}
+.head-content {
+  display: flex;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

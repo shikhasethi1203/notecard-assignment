@@ -1,15 +1,28 @@
-import './App.css';
-import Home from "./Home";
+import { createTheme, ThemeProvider } from "@mui/material";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import SignIn from "./components/Login";
+import HomePage from "./pages/HomePage/indes";
+import Login from "./pages/Login";
 
+const theme = createTheme();
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+]);
 
 function App() {
   return (
-    <div className="header">
-       <h1> Retropective</h1>
-      
-      <Home/>
-    
-    </div>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 }
 
