@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage/indes";
 import Login from "./pages/Login";
+// import Count from "./Count"
 
 const theme = createTheme();
 

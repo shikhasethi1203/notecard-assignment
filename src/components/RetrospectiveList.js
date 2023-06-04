@@ -12,7 +12,8 @@ function RetrospectiveList(props) {
   const [inputData, setInputData] = useState("");
   const dispatch = useDispatch();
 
-  const cards = useSelector((state) => state.cards);
+  const cards = useSelector((state) => state.cards)
+  // console.log(cards);
 
   const handleAdd = () => {
     console.log({ inputData, name });
@@ -27,10 +28,10 @@ function RetrospectiveList(props) {
           {cards[name].map((card, index) => (
             <Card card={card} cardName={name} key={card.id} />
           ))}
+          
         </div>
       );
     }
-
     return <Typography>Nothing in list</Typography>;
   };
 

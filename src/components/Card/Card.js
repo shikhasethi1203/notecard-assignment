@@ -19,6 +19,7 @@ function Card(props) {
   const handleChange = (event) => {
     setInputText(event.target.value);
   };
+  
 
   const handleDelete = (i) => {
     dispatch(deleteCard(card.id, cardName));
